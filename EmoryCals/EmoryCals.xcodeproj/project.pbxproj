@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD1EC5582C630D73004799EB /* mainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1EC5572C630D73004799EB /* mainPageView.swift */; };
+		AD1EC55A2C6322A0004799EB /* openingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1EC5592C6322A0004799EB /* openingView.swift */; };
+		ADE1967B2C5E1BFF0060F2BD /* EmoryCalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1967A2C5E1BFF0060F2BD /* EmoryCalsApp.swift */; };
+		ADE1967F2C5E1C010060F2BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE1967E2C5E1C010060F2BD /* Assets.xcassets */; };
+		ADE196822C5E1C010060F2BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE196812C5E1C010060F2BD /* Preview Assets.xcassets */; };
+		ADE1968C2C5E1C020060F2BD /* EmoryCalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1968B2C5E1C020060F2BD /* EmoryCalsTests.swift */; };
+		ADE196962C5E1C020060F2BD /* EmoryCalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE196952C5E1C020060F2BD /* EmoryCalsUITests.swift */; };
+		ADE196982C5E1C020060F2BD /* EmoryCalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE196972C5E1C020060F2BD /* EmoryCalsUITestsLaunchTests.swift */; };
+		ADE196A52C5E1DAC0060F2BD /* signupButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE196A42C5E1DAC0060F2BD /* signupButtonView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADE196882C5E1C020060F2BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE1966F2C5E1BFF0060F2BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE196762C5E1BFF0060F2BD;
+			remoteInfo = EmoryCals;
+		};
+		ADE196922C5E1C020060F2BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE1966F2C5E1BFF0060F2BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE196762C5E1BFF0060F2BD;
+			remoteInfo = EmoryCals;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD1EC5572C630D73004799EB /* mainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPageView.swift; sourceTree = "<group>"; };
+		AD1EC5592C6322A0004799EB /* openingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openingView.swift; sourceTree = "<group>"; };
+		ADE196772C5E1BFF0060F2BD /* EmoryCals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoryCals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE1967A2C5E1BFF0060F2BD /* EmoryCalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryCalsApp.swift; sourceTree = "<group>"; };
+		ADE1967E2C5E1C010060F2BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADE196812C5E1C010060F2BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADE196872C5E1C020060F2BD /* EmoryCalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmoryCalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE1968B2C5E1C020060F2BD /* EmoryCalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryCalsTests.swift; sourceTree = "<group>"; };
+		ADE196912C5E1C020060F2BD /* EmoryCalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmoryCalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE196952C5E1C020060F2BD /* EmoryCalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryCalsUITests.swift; sourceTree = "<group>"; };
+		ADE196972C5E1C020060F2BD /* EmoryCalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryCalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADE196A42C5E1DAC0060F2BD /* signupButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupButtonView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADE196742C5E1BFF0060F2BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE196842C5E1C020060F2BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE1968E2C5E1C020060F2BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADE1966E2C5E1BFF0060F2BD = {
+			isa = PBXGroup;
+			children = (
+				ADE196792C5E1BFF0060F2BD /* EmoryCals */,
+				ADE1968A2C5E1C020060F2BD /* EmoryCalsTests */,
+				ADE196942C5E1C020060F2BD /* EmoryCalsUITests */,
+				ADE196782C5E1BFF0060F2BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADE196782C5E1BFF0060F2BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADE196772C5E1BFF0060F2BD /* EmoryCals.app */,
+				ADE196872C5E1C020060F2BD /* EmoryCalsTests.xctest */,
+				ADE196912C5E1C020060F2BD /* EmoryCalsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADE196792C5E1BFF0060F2BD /* EmoryCals */ = {
+			isa = PBXGroup;
+			children = (
+				ADE1967A2C5E1BFF0060F2BD /* EmoryCalsApp.swift */,
+				AD1EC5592C6322A0004799EB /* openingView.swift */,
+				ADE1967E2C5E1C010060F2BD /* Assets.xcassets */,
+				ADE196802C5E1C010060F2BD /* Preview Content */,
+				ADE196A42C5E1DAC0060F2BD /* signupButtonView.swift */,
+				AD1EC5572C630D73004799EB /* mainPageView.swift */,
+			);
+			path = EmoryCals;
+			sourceTree = "<group>";
+		};
+		ADE196802C5E1C010060F2BD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ADE196812C5E1C010060F2BD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADE1968A2C5E1C020060F2BD /* EmoryCalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE1968B2C5E1C020060F2BD /* EmoryCalsTests.swift */,
+			);
+			path = EmoryCalsTests;
+			sourceTree = "<group>";
+		};
+		ADE196942C5E1C020060F2BD /* EmoryCalsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE196952C5E1C020060F2BD /* EmoryCalsUITests.swift */,
+				ADE196972C5E1C020060F2BD /* EmoryCalsUITestsLaunchTests.swift */,
+			);
+			path = EmoryCalsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADE196762C5E1BFF0060F2BD /* EmoryCals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE1969B2C5E1C020060F2BD /* Build configuration list for PBXNativeTarget "EmoryCals" */;
+			buildPhases = (
+				ADE196732C5E1BFF0060F2BD /* Sources */,
+				ADE196742C5E1BFF0060F2BD /* Frameworks */,
+				ADE196752C5E1BFF0060F2BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmoryCals;
+			productName = EmoryCals;
+			productReference = ADE196772C5E1BFF0060F2BD /* EmoryCals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADE196862C5E1C020060F2BD /* EmoryCalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE1969E2C5E1C020060F2BD /* Build configuration list for PBXNativeTarget "EmoryCalsTests" */;
+			buildPhases = (
+				ADE196832C5E1C020060F2BD /* Sources */,
+				ADE196842C5E1C020060F2BD /* Frameworks */,
+				ADE196852C5E1C020060F2BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE196892C5E1C020060F2BD /* PBXTargetDependency */,
+			);
+			name = EmoryCalsTests;
+			productName = EmoryCalsTests;
+			productReference = ADE196872C5E1C020060F2BD /* EmoryCalsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADE196902C5E1C020060F2BD /* EmoryCalsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE196A12C5E1C020060F2BD /* Build configuration list for PBXNativeTarget "EmoryCalsUITests" */;
+			buildPhases = (
+				ADE1968D2C5E1C020060F2BD /* Sources */,
+				ADE1968E2C5E1C020060F2BD /* Frameworks */,
+				ADE1968F2C5E1C020060F2BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE196932C5E1C020060F2BD /* PBXTargetDependency */,
+			);
+			name = EmoryCalsUITests;
+			productName = EmoryCalsUITests;
+			productReference = ADE196912C5E1C020060F2BD /* EmoryCalsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADE1966F2C5E1BFF0060F2BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					ADE196762C5E1BFF0060F2BD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					ADE196862C5E1C020060F2BD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ADE196762C5E1BFF0060F2BD;
+					};
+					ADE196902C5E1C020060F2BD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ADE196762C5E1BFF0060F2BD;
+					};
+				};
+			};
+			buildConfigurationList = ADE196722C5E1BFF0060F2BD /* Build configuration list for PBXProject "EmoryCals" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADE1966E2C5E1BFF0060F2BD;
+			productRefGroup = ADE196782C5E1BFF0060F2BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADE196762C5E1BFF0060F2BD /* EmoryCals */,
+				ADE196862C5E1C020060F2BD /* EmoryCalsTests */,
+				ADE196902C5E1C020060F2BD /* EmoryCalsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADE196752C5E1BFF0060F2BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE196822C5E1C010060F2BD /* Preview Assets.xcassets in Resources */,
+				ADE1967F2C5E1C010060F2BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE196852C5E1C020060F2BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE1968F2C5E1C020060F2BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADE196732C5E1BFF0060F2BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1EC55A2C6322A0004799EB /* openingView.swift in Sources */,
+				ADE196A52C5E1DAC0060F2BD /* signupButtonView.swift in Sources */,
+				AD1EC5582C630D73004799EB /* mainPageView.swift in Sources */,
+				ADE1967B2C5E1BFF0060F2BD /* EmoryCalsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE196832C5E1C020060F2BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE1968C2C5E1C020060F2BD /* EmoryCalsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE1968D2C5E1C020060F2BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE196982C5E1C020060F2BD /* EmoryCalsUITestsLaunchTests.swift in Sources */,
+				ADE196962C5E1C020060F2BD /* EmoryCalsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADE196892C5E1C020060F2BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE196762C5E1BFF0060F2BD /* EmoryCals */;
+			targetProxy = ADE196882C5E1C020060F2BD /* PBXContainerItemProxy */;
+		};
+		ADE196932C5E1C020060F2BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE196762C5E1BFF0060F2BD /* EmoryCals */;
+			targetProxy = ADE196922C5E1C020060F2BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADE196992C5E1C020060F2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADE1969A2C5E1C020060F2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADE1969C2C5E1C020060F2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmoryCals/Preview Content\"";
+				DEVELOPMENT_TEAM = AUCB49VL83;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidenmin.EmoryCals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADE1969D2C5E1C020060F2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmoryCals/Preview Content\"";
+				DEVELOPMENT_TEAM = AUCB49VL83;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidenmin.EmoryCals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADE1969F2C5E1C020060F2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUCB49VL83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidenmin.EmoryCalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmoryCals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EmoryCals";
+			};
+			name = Debug;
+		};
+		ADE196A02C5E1C020060F2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUCB49VL83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidenmin.EmoryCalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmoryCals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EmoryCals";
+			};
+			name = Release;
+		};
+		ADE196A22C5E1C020060F2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUCB49VL83;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidenmin.EmoryCalsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmoryCals;
+			};
+			name = Debug;
+		};
+		ADE196A32C5E1C020060F2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUCB49VL83;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidenmin.EmoryCalsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmoryCals;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADE196722C5E1BFF0060F2BD /* Build configuration list for PBXProject "EmoryCals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE196992C5E1C020060F2BD /* Debug */,
+				ADE1969A2C5E1C020060F2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE1969B2C5E1C020060F2BD /* Build configuration list for PBXNativeTarget "EmoryCals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE1969C2C5E1C020060F2BD /* Debug */,
+				ADE1969D2C5E1C020060F2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE1969E2C5E1C020060F2BD /* Build configuration list for PBXNativeTarget "EmoryCalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE1969F2C5E1C020060F2BD /* Debug */,
+				ADE196A02C5E1C020060F2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE196A12C5E1C020060F2BD /* Build configuration list for PBXNativeTarget "EmoryCalsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE196A22C5E1C020060F2BD /* Debug */,
+				ADE196A32C5E1C020060F2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADE1966F2C5E1BFF0060F2BD /* Project object */;
+}
