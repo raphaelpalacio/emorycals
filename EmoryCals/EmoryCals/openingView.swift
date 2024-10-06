@@ -1,49 +1,58 @@
-//
-//  ContentView.swift
-//  EmoryCals
-//
-//  Created by Aiden Min on 8/3/24.
-//
-
 import SwiftUI
 
-struct openingView: View {
+struct OpeningView: View {
     var body: some View {
-        ZStack {
-            Color("emoryBlue")
-                .ignoresSafeArea()
-            
-            VStack {
-                Spacer()
+        NavigationStack {
+            ZStack {
+                Color("emoryBlue")
+                    .ignoresSafeArea()
                 
-                Image("emoryEagle")
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                    .offset(x: -10)
-                Text("EmoryCals")
-                    .fontWeight(.medium)
-                    .font(.title2)
-                Spacer()
-                
-                Button{
-                } label: {
-                    signupButtonView(title: "Sign Up", color: "graysignup")
+                VStack {
+                    Spacer()
+                    
+                    Image("emoryEagle")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .offset(x: -10)
+                    Text("EmoryCals")
+                        .fontWeight(.medium)
+                        .font(.title2)
+                    Spacer()
+                    
+                    // Sign Up NavigationLink
+                    NavigationLink(destination: SignUpScreen()) {
+                        signupButtonView(title: "Sign Up", color: "graysignup")
+                    }
+                    .padding()
+                    
+                    // Log In NavigationLink
+                    NavigationLink(destination: LogInScreen()) {
+                        signupButtonView(title: "Log In", color: "yellowsignup")
+                    }
+                    
+                    Spacer()
                 }
-                .padding()
-                
-                Button{
-                } label: {
-                    signupButtonView(title: "Log In", color: "yellowsignup")
-                }
-                
-                Spacer()
-                
             }
         }
-
     }
 }
 
+struct SignUpScreen: View {
+    var body: some View {
+        Color("emoryBlue")
+            .ignoresSafeArea()
+        
+    }
+}
+
+struct LogInScreen: View {
+    var body: some View {
+        Color("emoryBlue")
+            .ignoresSafeArea()
+    }
+}
+
+// Preview
 #Preview {
-    openingView()
+    OpeningView()
 }

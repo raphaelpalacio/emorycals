@@ -11,7 +11,7 @@ import SwiftUI
 struct EmoryCalsApp: App {
     var body: some Scene {
         WindowGroup {
-            openingView()
+            OpeningView()
         }
     }
 }
