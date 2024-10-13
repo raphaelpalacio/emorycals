@@ -167,3 +167,10 @@ struct WorkoutsDetailView: View {
 #Preview {
     mainPageView(dailyCalories: 2499)
 }
+
+
+// TO-DO:
+// make the list items clickable to see their info
+// "add" button functionality to let user able to add stuff
+// make the edits to the list save after exiting the view
+
