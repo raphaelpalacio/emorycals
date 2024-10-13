@@ -109,12 +109,52 @@ struct progressBarColorView: View {
 }
 
 struct CaloriesDetailView: View {
+    @State var meals: [String] = ["Chipotle Bowl", "McDonald's Big Mac"]
+    @State var snacks: [String] = ["Kettle Chips", "Popcorn"]
+    
     var body: some View {
-        Text("Calories Detail View")
-            .font(.largeTitle)
-            .padding()
+        NavigationStack {
+            List {
+                // Meals section
+                Section(header: Text("Meals")) {
+                    ForEach(meals, id: \.self) { meal in
+                        Text(meal)
+                    }
+                    .onDelete { indexSet in
+                        deleteItems(from: &meals, at: indexSet)
+                    }
+                }
+                
+                // Snacks section
+                Section(header: Text("Snacks")) {
+                    ForEach(snacks, id: \.self) { snack in
+                        Text(snack)
+                    }
+                    .onDelete { indexSet in
+                        deleteItems(from: &snacks, at: indexSet)
+                    }
+                }
+            }
+            .navigationTitle("Daily Calories")
+            .navigationBarItems(trailing: addButton)
+        }
+    }
+    
+    var addButton: some View {
+        Button("Add", action:{
+            add()
+        })
+    }
+    
+    // General delete function
+    func deleteItems(from array: inout [String], at offsets: IndexSet) {
+        array.remove(atOffsets: offsets)
+    }
+    func add() {
+        meals.append("hello")
     }
 }
+
 
 struct WorkoutsDetailView: View {
     var body: some View {
