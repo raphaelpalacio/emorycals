@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct EmoryCalsApp: App {
@@ -13,5 +14,6 @@ struct EmoryCalsApp: App {
         WindowGroup {
             OpeningView()
         }
+        .modelContainer(for: Meal.self)
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct mainPageView: View {
     let dailyCalories: Int
@@ -68,93 +69,81 @@ struct mainPageView: View {
     }
 }
 
-struct boxView<Destination: View>: View {
-    var destination: Destination
-    
-    var body: some View {
-        ZStack {
-            Rectangle()
-                .frame(width: 250, height: 250)
-                .foregroundColor(Color("box1"))
-                .cornerRadius(10.0)
-            
-            NavigationLink(destination: destination) {
-                Text("See More >")
-                    .font(.system(size: 8.5))
-                    .opacity(0.5)
-                    .padding(2)
-                    .frame(width: 250, height: 250, alignment: .topTrailing)
-            }
-        }
-    }
-}
-
-struct progressBarColorView: View {
-    let calories: Int
-    private let maxCalories: Int = 3000
-    
-    // Calculate progress based on calories and maxCalories
-    private var progress: CGFloat {
-        CGFloat(min(Double(calories) / Double(maxCalories), 1.0))
-    }
-    
-    var body: some View {
-        Circle() // Green or red progress bar
-            .trim(from: 0.0, to: progress)
-            .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
-            .foregroundColor(calories > maxCalories ? Color.red : Color.green)
-            .rotationEffect(Angle(degrees: -90))
-            .frame(width: 150, height: 150)
-    }
-}
-
 struct CaloriesDetailView: View {
-    @State var meals: [String] = ["Chipotle Bowl", "McDonald's Big Mac"]
-    @State var snacks: [String] = ["Kettle Chips", "Popcorn"]
+    @Environment(\.modelContext) var modelContext
+    @State private var path = [Meal]()
+    @Query var meals: [Meal]
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path){
             List {
-                // Meals section
-                Section(header: Text("Meals")) {
-                    ForEach(meals, id: \.self) { meal in
-                        Text(meal)
-                    }
-                    .onDelete { indexSet in
-                        deleteItems(from: &meals, at: indexSet)
-                    }
-                }
-                
-                // Snacks section
-                Section(header: Text("Snacks")) {
-                    ForEach(snacks, id: \.self) { snack in
-                        Text(snack)
-                    }
-                    .onDelete { indexSet in
-                        deleteItems(from: &snacks, at: indexSet)
+                ForEach(meals) { meal in
+                    NavigationLink(value: meal) {
+                        Text(meal.name)
                     }
                 }
             }
             .navigationTitle("Daily Calories")
-            .navigationBarItems(trailing: addButton)
+            .navigationDestination(for: Meal.self){ meal in
+                EditMealView(meal: meal)
+            }
+            .toolbar {
+                Button("Add Meal", systemImage: "plus", action: addMeal)
+            }
         }
     }
-    
-    var addButton: some View {
-        Button("Add", action:{
-            add()
-        })
+    func addMeal() {
+        let meal = Meal(name: "")
+        modelContext.insert(meal)
+        path.append(meal)
     }
     
-    // General delete function
-    func deleteItems(from array: inout [String], at offsets: IndexSet) {
-        array.remove(atOffsets: offsets)
-    }
-    func add() {
-        meals.append("hello")
-    }
+    
+//    @State var meals: [String] = ["Chipotle Bowl", "McDonald's Big Mac"]
+//    @State var snacks: [String] = ["Kettle Chips", "Popcorn"]
+//    
+//    var body: some View {
+//        NavigationStack {
+//            List {
+//                // Meals section
+//                Section(header: Text("Meals")) {
+//                    ForEach(meals, id: \.self) { meal in
+//                        Text(meal)
+//                    }
+//                    .onDelete { indexSet in
+//                        deleteItems(from: &meals, at: indexSet)
+//                    }
+//                }
+//                
+//                // Snacks section
+//                Section(header: Text("Snacks")) {
+//                    ForEach(snacks, id: \.self) { snack in
+//                        Text(snack)
+//                    }
+//                    .onDelete { indexSet in
+//                        deleteItems(from: &snacks, at: indexSet)
+//                    }
+//                }
+//            }
+//            .navigationTitle("Daily Calories")
+//            .navigationBarItems(trailing: addButton)
+//        }
+//    }
+//    
+//    var addButton: some View {
+//        Button("Add", action:{
+//            add()
+//        })
+//    }
+//    
+//    // General delete function
+//    func deleteItems(from array: inout [String], at offsets: IndexSet) {
+//        array.remove(atOffsets: offsets)
+//    }
+//    func add() {
+//        meals.append("hello")
+//    }
 }
-
 
 struct WorkoutsDetailView: View {
     var body: some View {
@@ -164,12 +153,15 @@ struct WorkoutsDetailView: View {
     }
 }
 
+
+
 #Preview {
     mainPageView(dailyCalories: 2499)
 }
 
 
 // TO-DO:
+//make sure the additions of meals update calorie count
 // make the list items clickable to see their info
 // "add" button functionality to let user able to add stuff
 // make the edits to the list save after exiting the view
