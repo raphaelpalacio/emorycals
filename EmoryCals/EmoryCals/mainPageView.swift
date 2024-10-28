@@ -82,6 +82,7 @@ struct CaloriesDetailView: View {
                         Text(meal.name)
                     }
                 }
+                .onDelete(perform: deleteMeal)
             }
             .navigationTitle("Daily Calories")
             .navigationDestination(for: Meal.self){ meal in
@@ -97,7 +98,15 @@ struct CaloriesDetailView: View {
         modelContext.insert(meal)
         path.append(meal)
     }
+    func deleteMeal(at offsets: IndexSet) {
+        for offset in offsets {
+            let meal = meals[offset]
+            modelContext.delete(meal)
+        }
+    }
     
+    
+}
     
 //    @State var meals: [String] = ["Chipotle Bowl", "McDonald's Big Mac"]
 //    @State var snacks: [String] = ["Kettle Chips", "Popcorn"]
@@ -143,7 +152,7 @@ struct CaloriesDetailView: View {
 //    func add() {
 //        meals.append("hello")
 //    }
-}
+
 
 struct WorkoutsDetailView: View {
     var body: some View {

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		AD1EC5582C630D73004799EB /* mainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1EC5572C630D73004799EB /* mainPageView.swift */; };
 		AD1EC55A2C6322A0004799EB /* openingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1EC5592C6322A0004799EB /* openingView.swift */; };
+		ADB74A882CC78ED50081C3AF /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB74A872CC78ED50081C3AF /* Meal.swift */; };
+		ADB74A8A2CC790880081C3AF /* EditMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB74A892CC790880081C3AF /* EditMealView.swift */; };
+		ADB74A8C2CC792C20081C3AF /* progressBarColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB74A8B2CC792C20081C3AF /* progressBarColorView.swift */; };
+		ADB74A8E2CC793370081C3AF /* boxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB74A8D2CC793370081C3AF /* boxView.swift */; };
 		ADE1967B2C5E1BFF0060F2BD /* EmoryCalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1967A2C5E1BFF0060F2BD /* EmoryCalsApp.swift */; };
 		ADE1967F2C5E1C010060F2BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE1967E2C5E1C010060F2BD /* Assets.xcassets */; };
 		ADE196822C5E1C010060F2BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE196812C5E1C010060F2BD /* Preview Assets.xcassets */; };
@@ -38,6 +42,10 @@
 /* Begin PBXFileReference section */
 		AD1EC5572C630D73004799EB /* mainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPageView.swift; sourceTree = "<group>"; };
 		AD1EC5592C6322A0004799EB /* openingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openingView.swift; sourceTree = "<group>"; };
+		ADB74A872CC78ED50081C3AF /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		ADB74A892CC790880081C3AF /* EditMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMealView.swift; sourceTree = "<group>"; };
+		ADB74A8B2CC792C20081C3AF /* progressBarColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressBarColorView.swift; sourceTree = "<group>"; };
+		ADB74A8D2CC793370081C3AF /* boxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxView.swift; sourceTree = "<group>"; };
 		ADE196772C5E1BFF0060F2BD /* EmoryCals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoryCals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE1967A2C5E1BFF0060F2BD /* EmoryCalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryCalsApp.swift; sourceTree = "<group>"; };
 		ADE1967E2C5E1C010060F2BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +112,10 @@
 				ADE196802C5E1C010060F2BD /* Preview Content */,
 				ADE196A42C5E1DAC0060F2BD /* signupButtonView.swift */,
 				AD1EC5572C630D73004799EB /* mainPageView.swift */,
+				ADB74A8D2CC793370081C3AF /* boxView.swift */,
+				ADB74A8B2CC792C20081C3AF /* progressBarColorView.swift */,
+				ADB74A892CC790880081C3AF /* EditMealView.swift */,
+				ADB74A872CC78ED50081C3AF /* Meal.swift */,
 			);
 			path = EmoryCals;
 			sourceTree = "<group>";
@@ -264,9 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1EC55A2C6322A0004799EB /* openingView.swift in Sources */,
+				ADB74A8A2CC790880081C3AF /* EditMealView.swift in Sources */,
 				ADE196A52C5E1DAC0060F2BD /* signupButtonView.swift in Sources */,
 				AD1EC5582C630D73004799EB /* mainPageView.swift in Sources */,
+				ADB74A8E2CC793370081C3AF /* boxView.swift in Sources */,
+				ADB74A8C2CC792C20081C3AF /* progressBarColorView.swift in Sources */,
 				ADE1967B2C5E1BFF0060F2BD /* EmoryCalsApp.swift in Sources */,
+				ADB74A882CC78ED50081C3AF /* Meal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
